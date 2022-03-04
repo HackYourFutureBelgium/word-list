@@ -1,6 +1,6 @@
 # https://github.com/marketplace/actions/run-eslint
 
-name: Lint JavaScript
+name: Lint
 
 on:
   pull_request:
@@ -20,4 +20,8 @@ jobs:
 
       - run: npm install
 
+      - run: npm run format:check
+      - run: npm run lint:ls
+      - run: npm run lint:md
+      - npm: run run lint:css -- ./client/styles
       - run: npm run lint:js -- ./client

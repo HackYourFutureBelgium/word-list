@@ -1,15 +1,5 @@
 {
-  "plugins": [
-    "jsdoc",
-    "prefer-arrow",
-    "prettier",
-    "spellcheck",
-    "filenames",
-    "folders",
-    "boundaries",
-    "sonarjs",
-    "disable"
-  ],
+  "plugins": ["jsdoc", "prefer-arrow", "boundaries", "sonarjs", "disable"],
   "parserOptions": {
     "sourceType": "module"
   },
@@ -55,8 +45,7 @@
         "no-lone-blocks": 0,
         "jsdoc/require-jsdoc": 0,
         "no-undefined": 0,
-        "no-unused-vars": 0,
-        "spellcheck/spell-checker": 0
+        "no-unused-vars": 0
       },
       "settings": {
         "disable/plugins": ["sonarjs"]
@@ -70,7 +59,6 @@
   "extends": [
     "eslint:recommended",
     "airbnb-base",
-    "prettier",
     "plugin:boundaries/strict",
     "plugin:sonarjs/recommended"
   ],
@@ -112,17 +100,7 @@
     ],
     "camelcase": [2, { "properties": "never" }],
 
-    "prettier/prettier": ["error"],
-
     "prefer-arrow/prefer-arrow-functions": ["warn"],
-
-    "spellcheck/spell-checker": [
-      "warn",
-      { "minLength": 4, "identifiers": false, "strings": false }
-    ],
-
-    "folders/match-regex": [2, "^(?!.*([-])\\1{1})[a-z-]+$", "src"],
-    "filenames/match-regex": [2, "^(?!.*([-])\\1{1})[a-z-.spec]+$"],
 
     "boundaries/element-types": [
       2,

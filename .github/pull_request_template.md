@@ -75,9 +75,11 @@ about: A template PR for contributing to this project
 
 - [ ] handlers have a JSDoc comment
 - [ ] the function name matches the file name
-- [ ] handlers are used as a callback to `.addEventListener` somewhere in the program
+- [ ] handlers are used as a callback to `.addEventListener` somewhere in the
+      program
 - [ ] functions from `/logic` or `/procedures` files may be imported and called
-- [ ] functions from `/handlers` may be imported and attached to the DOM with event listeners
+- [ ] functions from `/handlers` may be imported and attached to the DOM with
+      event listeners
 - [ ] data from `/data.js` may be imported and used
 - [ ] handlers may read and write to the DOM
 - [ ] handlers _do not_ return values that you will need later in the program

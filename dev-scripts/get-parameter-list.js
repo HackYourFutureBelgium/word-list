@@ -16,7 +16,7 @@ export const getParameterList = (theFunction) => {
       ? param.left.name
       : param.type === 'ObjectPattern'
       ? param.properties.map((prop) => prop.key.name)
-      : param.name
+      : param.name,
   );
 
   return paramNames;

@@ -52,7 +52,7 @@ export const showComponentTestCase = (
     argValueElement.innerHTML = `<pre>${JSON.stringify(
       args[i],
       null,
-      2
+      2,
     )}</pre>`;
     rowElement.appendChild(argValueElement);
 
